@@ -503,4 +503,4 @@ const NutritionAdvice: React.FC = () => {
   );
 };
 
-export default NutritionAdvice; 
+export default NutritionAdvice; // כאן יתווסף עוד קוד בעתיד

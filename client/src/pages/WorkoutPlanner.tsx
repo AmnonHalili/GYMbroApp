@@ -405,4 +405,4 @@ const WorkoutPlanner: React.FC = () => {
   );
 };
 
-export default WorkoutPlanner; 
+export default WorkoutPlanner; // כאן יתווסף עוד קוד בעתיד
