@@ -886,4 +886,4 @@ function getFallbackWorkoutPlan(fitnessLevel: string, goals: string): string {
   }
   
   return plan;
-} 
+} // כאן יתווסף עוד קוד בעתיד
