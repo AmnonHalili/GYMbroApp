@@ -5,60 +5,32 @@ export interface IUser extends Document {
   username: string;
   email: string;
   password: string;
-  profilePicture?: string;
-  bio?: string;
-  googleId?: string;
-  refreshToken?: string;
-  isAdmin?: boolean;
-  role?: string;
+  image?: string;
   createdAt: Date;
   updatedAt: Date;
   comparePassword(candidatePassword: string): Promise<boolean>;
 }
 
-const UserSchema = new Schema(
+const UserSchema: Schema = new Schema(
   {
     username: {
       type: String,
       required: true,
       unique: true,
-      trim: true,
-      minlength: 3,
-      maxlength: 30,
+      trim: true
     },
     email: {
       type: String,
       required: true,
       unique: true,
-      trim: true,
-      lowercase: true,
-      match: [/^\S+@\S+\.\S+$/, 'Please enter a valid email address'],
+      trim: true
     },
     password: {
       type: String,
-      required: function(this: any) { 
-        return !this.googleId; 
-      }
+      required: true
     },
-    profilePicture: {
-      type: String,
-      default: ''
-    },
-    bio: {
-      type: String,
-      default: ''
-    },
-    googleId: {
+    image: {
       type: String
-    },
-    isAdmin: {
-      type: Boolean,
-      default: false
-    },
-    role: {
-      type: String,
-      enum: ['user', 'admin'],
-      default: 'user'
     }
   },
   { timestamps: true }
