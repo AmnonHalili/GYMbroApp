@@ -1,4 +1,4 @@
-# GYMbro2 - פלטפורמת בריאות וכושר
+# GYMbro - פלטפורמת בריאות וכושר
 
 ![image](https://github.com/user-attachments/assets/acfb39b9-888d-4b58-abd0-480dc6f74249)
 ![image](https://github.com/user-attachments/assets/35c6a2f3-f4c3-49a6-9c8e-549e39d049c2)
